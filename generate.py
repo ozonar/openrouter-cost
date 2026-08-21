@@ -438,7 +438,13 @@ def generate_all(data, generated_at):
                 "Без ранжирования по стоимости вывода (иная ценовая модель).",
             )
         elif cat["modality"] in ("image", "video", "audio"):
-            md = render_per_unit(rows, generated_at, cat["title"], cat["desc"])
+            # Столбец «Цена за единицу $» показываем, только если в категории есть
+            # хотя бы одна модель с ценой за единицу вывода. Иначе (например video,
+            # где цены за единицу в данных нет) — обычный рендер с одним ценовым столбцом.
+            if any(r["unit"] > 0 for r in rows):
+                md = render_per_unit(rows, generated_at, cat["title"], cat["desc"])
+            else:
+                md = render_generic(rows, generated_at, cat["title"], cat["desc"], cat["rank_by"], "цене вывода (output)")
         else:
             out_label = "цене вывода (output)" if cat["rank_by"] == "completion" else "цене входа (prompt)"
             md = render_generic(rows, generated_at, cat["title"], cat["desc"], cat["rank_by"], out_label)
