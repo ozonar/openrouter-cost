@@ -7,7 +7,7 @@
      https://openrouter.ai/api/v1/models?output_modalities=all
      (включая текстовые, генераторы изображений/видео/аудио, эмбеддеры,
      реранкеры, синтез речи и транскрипцию).
-  2. Сырой ответ сохраняет в models_dump.json (в .gitignore — не попадает в git).
+  2. Сырой ответ сохраняет в models_dump.json
   3. Разбивает модели на категории по модальности ВЫХОДА и генерирует
      отдельный README-файл для каждой категории:
        - README.text.md          — Текст (чат / Q&A / работа с документами)
@@ -202,9 +202,17 @@ def usd_per_million(x):
 
 
 def fmt_price(x):
+    """Цена за 1 млн токенов: на вход — $ за токен."""
     if x < 0:
         return "—"
     return f"{usd_per_million(x):,.2f}"
+
+
+def fmt_unit_price(x):
+    """Цена за единицу вывода (изображение/видео/аудио): на вход — $ за штуку."""
+    if x < 0:
+        return "—"
+    return f"${x:,.4f}"
 
 
 def fmt_ctx(ctx):
@@ -312,6 +320,30 @@ def render_generic(rows, generated_at, title, desc, rank_field, out_label):
     return "\n".join(lines) + "\n"
 
 
+def render_per_unit(rows, generated_at, title, desc):
+    """Рендер для генераторов с ценой за единицу вывода (image/video/audio).
+
+    Два столбца: «Цена за токен $/M» (prompt/completion/<mod>_output) и
+    «Цена за единицу $» (pricing.image/video/audio). Оба берутся из JSON как есть.
+    """
+    lines = [
+        f"# {title}\n",
+        "> Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`",
+        f"> Последняя генерация: `{generated_at}` (UTC)",
+        f"> {desc}",
+        "> Цены: **Цена за токен $/M** — за 1 млн токенов; **Цена за единицу $** —",
+        "> фиксированная цена за единицу вывода (изображение/видео/аудио), если она задана.",
+        "> Сортировка по цене вывода по возрастанию.\n",
+        "| Модель | Входная модальность | Цена за токен $/M | Цена за единицу $ | Контекст | Описание |",
+        "|---|---|---|---|---|---|",
+    ]
+    for r in rows:
+        tok = fmt_price(r["token"]) if r["token"] > 0 else "—"
+        unit = fmt_unit_price(r["unit"]) if r["unit"] > 0 else "—"
+        lines.append(f"| `{r['id']}` | {r['inmod']} | {tok} | {unit} | {r['ctx']} | {r['note']} |")
+    return "\n".join(lines) + "\n"
+
+
 def render_emb_rerank(rows, generated_at, title, desc, price_label):
     """Рендер для эмбеддингов и реранкеров (без ранжирования по стоимости вывода)."""
     lines = [
@@ -329,9 +361,16 @@ def render_emb_rerank(rows, generated_at, title, desc, price_label):
 
 
 def build_rows(cat, models):
-    """Строит строки для категории с учётом полей сортировки."""
+    """Строит строки для категории с учётом полей сортировки.
+
+    Для генераторов (image/video/audio) у модели может быть либо цена
+    за токен (prompt/completion или <mod>_output), либо цена за единицу
+    вывода (<mod>, например pricing.image — $ за одно изображение).
+    Разделяем их: is_unit — модель берёт за единицу, иначе — за токены.
+    """
     key = cat["key"]
     notes_dict = CATEGORY_NOTES.get(key, {})
+    unit_mod = cat.get("modality")  # 'image'/'video'/'audio' или иное
     rows = []
     for m in models:
         arch = m.get("architecture") or {}
@@ -340,10 +379,21 @@ def build_rows(cat, models):
         prom = price_of(m, "prompt")
         comp = price_of(m, "completion")
         mid = m.get("id", "")
+
+        # Цена за единицу вывода (например pricing.image — $ за одно изображение)
+        unit_price = 0.0
+        # Цена за токен (например completion или image_output — $ за токен)
+        token_price = 0.0
+        if unit_mod in ("image", "video", "audio"):
+            unit_price = price_of(m, unit_mod)
+            token_price = max(prom, comp, price_of(m, f"{unit_mod}_output"))
+        else:
+            token_price = max(prom, comp)
         if key == "text":
             note = notes_dict.get(mid, default_note(m))
         else:
             note = notes_dict.get(mid, category_fallback_note(m, key))
+
         base = {
             "id": mid,
             "ctx": ctx,
@@ -352,13 +402,19 @@ def build_rows(cat, models):
             "note": note,
             "prom": prom,
             "comp": comp,
-            "prompt": prom,   # алиасы для render_generic (rank_field)
+            "prompt": prom,          # алиасы для render_generic (rank_field)
             "completion": comp,
+            "unit": unit_price,      # $ за единицу вывода (pricing.<mod>)
+            "token": token_price,    # $ за токен
         }
         rows.append(base)
 
     rb = cat["rank_by"]
-    if rb == "completion":
+    if unit_mod in ("image", "video", "audio"):
+        # сортируем по фактической цене вывода (большей из двух: за единицу или за токен)
+        rows.sort(key=lambda r: (1 if max(r["unit"], r["token"]) <= 0 else 0,
+                                 max(r["unit"], r["token"])))
+    elif rb == "completion":
         rows.sort(key=lambda r: (1 if r["comp"] < 0 else 0, r["comp"]))
     elif rb == "prompt":
         rows.sort(key=lambda r: r["prom"])
@@ -368,6 +424,7 @@ def build_rows(cat, models):
 
 def generate_all(data, generated_at):
     by_cat = classify(data)
+
     out_files = []
     for cat in CATEGORIES:
         models = by_cat[cat["key"]]
@@ -380,6 +437,8 @@ def generate_all(data, generated_at):
                 rows, generated_at, cat["title"], cat["desc"],
                 "Без ранжирования по стоимости вывода (иная ценовая модель).",
             )
+        elif cat["modality"] in ("image", "video", "audio"):
+            md = render_per_unit(rows, generated_at, cat["title"], cat["desc"])
         else:
             out_label = "цене вывода (output)" if cat["rank_by"] == "completion" else "цене входа (prompt)"
             md = render_generic(rows, generated_at, cat["title"], cat["desc"], cat["rank_by"], out_label)

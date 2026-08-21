@@ -1,0 +1,1 @@
+Openrouter недоступен с этого компьютера. Нужно использовать прокси: HTTP_PROXY="http://ozologin:ozopass@proxy.0hd.ru:10001"
