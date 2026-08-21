@@ -21,17 +21,20 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate openrouter_models.md
+      - name: Generate category README files
         run: python3 generate.py
 
       - name: Commit & push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add openrouter_models.md
+          # Коммитим только сгенерированные markdown-файлы категорий
+          git add README.text.md README.image.md README.embeddings.md \
+                  README.video.md README.audio.md README.rerank.md \
+                  README.speech.md README.transcription.md
           if git diff --cached --quiet; then
             echo "No changes — nothing to commit"
           else
-            git commit -m "chore: refresh OpenRouter models (weekly)"
+            git commit -m "chore: refresh OpenRouter models by category (weekly)"
             git push
           fi
