@@ -1,7 +1,7 @@
 # Генерация изображений OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-08-24 03:54` (UTC)
+> Последняя генерация: `2026-08-31 09:23` (UTC)
 > Модели, которые генерируют и редактируют изображения. Выход — изображение.
 > Цены: **Цена за токен $/M** — за 1 млн токенов; **Цена за единицу $** —
 > фиксированная цена за единицу вывода (изображение/видео/аудио), если она задана.
@@ -9,6 +9,7 @@
 
 | Модель | Входная модальность | Цена за токен $/M | Цена за единицу $ | Контекст | Описание |
 |---|---|---|---|---|---|
+| `meta/muse-image` | image+text | 2.40 | — | 65k | Генерация и редактирование изображений |
 | `black-forest-labs/flux.2-klein-4b` | image+text | 3.42 | — | 40k | FLUX.2 Klein 4B; компактная и быстрая |
 | `krea/krea-2-medium-turbo` | image+text | 3.59 | — | 65k | Krea 2 Turbo; быстрая генерация |
 | `sourceful/riverflow-v2.5-fast` | image+text | 4.55 | — | 32k | Riverflow V2.5 Fast; быстрая актуальная генерация |
@@ -17,17 +18,21 @@
 | `black-forest-labs/flux.2-pro` | image+text | 7.32 | — | 46k | FLUX.2 Pro; премиальная генерация Black Forest |
 | `openai/gpt-image-1-mini` | image+text | 8.00 | — | 400k | GPT Image 1 Mini; быстрая и дешёвая генерация |
 | `openai/gpt-5-image-mini` | file+image+text | 8.00 | — | 400k | GPT-5 Image Mini; лёгкая и быстрая генерация |
+| `recraft/recraft-v4-styles` | image+text | 8.38 | — | 65k | Генерация и редактирование изображений |
 | `bytedance-seed/seedream-5-0-lite` | image+text | 8.38 | — | — | Seedream 5 Lite; быстрая генерация, хорошее качество |
 | `recraft/recraft-v4.1-utility` | image+text | 8.38 | — | 65k | Recraft V4.1 Utility; практичная генерация |
 | `recraft/recraft-v4.1` | image+text | 8.38 | — | 65k | Recraft V4.1; актуальная генерация |
 | `recraft/recraft-v4` | image+text | 9.58 | — | 65k | Recraft V4; генерация с упором на дизайн |
 | `recraft/recraft-v3` | image+text | 9.58 | — | 65k | Recraft V3; стильная векторная и растровая генерация |
 | `bytedance-seed/seedream-4.5` | image+text | 9.58 | — | 4k | Seedream 4.5; проверенная генерация изображений |
+| `recraft/recraft-v4-styles-vector` | image+text | 11.98 | — | 65k | Генерация и редактирование изображений |
 | `krea/krea-2-large` | image+text | 14.37 | — | 65k | Krea 2 Large; мощная генерация изображений |
 | `black-forest-labs/flux.2-flex` | image+text | 14.65 | — | 67k | FLUX.2 Flex; гибкая генерация |
 | `black-forest-labs/flux.2-max` | image+text | 17.09 | — | 46k | FLUX.2 Max; максимальное качество |
 | `recraft/recraft-v4.1-vector` | image+text | 19.16 | — | 65k | Recraft V4.1 Vector; векторная графика |
 | `recraft/recraft-v4-vector` | image+text | 19.16 | — | 65k | Recraft V4 Vector; векторная графика |
+| `recraft/recraft-v4-styles-pro` | image+text | 23.95 | — | 65k | Модель генерации изображений высокого качества |
+| `recraft/recraft-v4-styles-pro-vector` | image+text | 28.74 | — | 65k | Модель генерации изображений высокого качества |
 | `google/gemini-3.1-flash-lite-image` | image+text | 30.00 | — | 65k | Nano Banana 2 Lite; лёгкая версия |
 | `openai/gpt-image-2` | image+text | 30.00 | — | 400k | GPT Image 2; новейшая генерация OpenAI |
 | `openai/gpt-5.4-image-2` | file+image+text | 30.00 | — | 272k | GPT-5.4 Image 2; актуальная генерация изображений |

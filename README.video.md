@@ -1,12 +1,15 @@
 # Генерация видео OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-08-24 03:54` (UTC)
+> Последняя генерация: `2026-08-31 09:23` (UTC)
 > Модели, генерирующие видео из текста/изображений.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене вывода (output)** по возрастанию.
 
 | Модель | Входная модальность | Цена $/M | Контекст | Описание |
 |---|---|---|---|---|
+| `alibaba/wan-3.0-prime` | image+text | 0.00 | — | Генерация видео из текста/изображений |
+| `alibaba/wan-3.0` | image+text | 0.00 | — | Генерация видео из текста/изображений |
+| `heygen/avatar-iv` | audio+image+text | 0.00 | — | Генерация видео из текста/изображений |
 | `black-forest-labs/flux-video-upscale` | text+video | 0.00 | — | FLUX Video Upscale; повышение разрешения видео |
 | `bytedance/seedance-2.0-mini` | audio+image+text+video | 0.00 | — | Seedance 2.0 Mini; компактная версия |
 | `bytedance/seedance-2.5` | audio+image+text+video | 0.00 | — | Seedance 2.5; актуальная генерация |
