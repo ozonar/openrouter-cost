@@ -1,7 +1,7 @@
 # Транскрипция (STT) OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-08-31 09:23` (UTC)
+> Последняя генерация: `2026-09-07 07:58` (UTC)
 > Преобразование аудио в текст. Ранжирование по цене входа.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене входа (prompt)** по возрастанию.
 
@@ -24,5 +24,6 @@
 | `openai/gpt-transcribe` | audio | 4,500.00 | — | GPT Transcribe; мощная транскрипция |
 | `openai/whisper-1` | audio | 6,000.00 | — | Whisper-1; классическое распознавание |
 | `google/chirp-3` | audio | 16,000.00 | — | Google Chirp 3; распознавание речи |
+| `microsoft/mai-transcribe-2` | audio | 100,000.00 | — | Транскрипция аудио (аудио → текст) |
 | `x-ai/grok-stt-1.0` | audio | 100,000.00 | — | Grok STT; распознавание речи xAI |
 | `microsoft/mai-transcribe-1.5` | audio | 360,000.00 | — | Microsoft MAI Transcribe; качественная транскрипция |
