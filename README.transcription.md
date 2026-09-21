@@ -1,7 +1,7 @@
 # Транскрипция (STT) OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-09-14 08:36` (UTC)
+> Последняя генерация: `2026-09-21 08:37` (UTC)
 > Преобразование аудио в текст. Ранжирование по цене входа.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене входа (prompt)** по возрастанию.
 
@@ -15,16 +15,16 @@
 | `qwen/qwen3-asr-1.7b` | audio | 7.50 | — | Qwen3 ASR 1.7B; ASR среднего размера |
 | `openai/whisper-large-v3` | audio | 7.50 | — | Whisper Large V3; эталон распознавания речи |
 | `mistralai/voxtral-mini-3b-2507` | audio | 16.67 | — | Voxtral Mini 3B; компактный STT |
+| `nvidia/parakeet-tdt-0.6b-v3` | audio | 25.00 | — | Parakeet TDT 0.6B; компактный ASR |
+| `x-ai/grok-stt-1.0` | audio | 27.78 | — | Grok STT; распознавание речи xAI |
 | `qwen/qwen3-asr-flash-2026-02-10` | audio | 35.00 | — | Qwen3 ASR Flash; быстрый ASR |
+| `meta/muse-voice-transcribe-1.0` | audio | 50.00 | — | Транскрипция аудио (аудио → текст) |
 | `mistralai/voxtral-small-24b-2507-stt` | audio | 50.00 | — | Voxtral Small; распознавание речи |
+| `mistralai/voxtral-mini-transcribe` | audio | 50.00 | — | Voxtral Mini Transcribe; транскрипция |
+| `deepgram/nova-3` | audio | 71.67 | — | Deepgram Nova 3; быстрая точная транскрипция |
+| `openai/gpt-transcribe` | audio | 75.00 | — | GPT Transcribe; мощная транскрипция |
 | `fish-audio/transcribe-1` | audio | 100.00 | — | Fish Transcribe; транскрипция |
-| `nvidia/parakeet-tdt-0.6b-v3` | audio | 1,500.00 | — | Parakeet TDT 0.6B; компактный ASR |
-| `mistralai/voxtral-mini-transcribe` | audio | 3,000.00 | — | Voxtral Mini Transcribe; транскрипция |
-| `deepgram/nova-3` | audio | 4,300.00 | — | Deepgram Nova 3; быстрая точная транскрипция |
-| `openai/gpt-transcribe` | audio | 4,500.00 | — | GPT Transcribe; мощная транскрипция |
-| `openai/whisper-1` | audio | 6,000.00 | — | Whisper-1; классическое распознавание |
-| `google/chirp-3` | audio | 16,000.00 | — | Google Chirp 3; распознавание речи |
+| `openai/whisper-1` | audio | 100.00 | — | Whisper-1; классическое распознавание |
+| `google/chirp-3` | audio | 266.67 | — | Google Chirp 3; распознавание речи |
 | `microsoft/mai-transcribe-2` | audio | 100,000.00 | — | Транскрипция аудио (аудио → текст) |
-| `x-ai/grok-stt-1.0` | audio | 100,000.00 | — | Grok STT; распознавание речи xAI |
-| `meta/muse-voice-transcribe-1.0` | audio | 180,000.00 | — | Транскрипция аудио (аудио → текст) |
 | `microsoft/mai-transcribe-1.5` | audio | 360,000.00 | — | Microsoft MAI Transcribe; качественная транскрипция |

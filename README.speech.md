@@ -1,7 +1,7 @@
 # Синтез речи (TTS) OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-09-14 08:36` (UTC)
+> Последняя генерация: `2026-09-21 08:37` (UTC)
 > Преобразование текста в речь. Ранжирование по цене входа (цена токенов текста).
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене входа (prompt)** по возрастанию.
 
@@ -11,7 +11,6 @@
 | `fish-audio/s2.1-pro-free:free` | text | 0.00 | — | Fish S2.1 Pro free; бесплатная версия |
 | `google/gemini-3.1-flash-tts-preview` | text | 1.00 | 32k | Gemini Flash TTS; синтез речи Google |
 | `hexgrad/kokoro-82m` | text | 4.00 | 4k | Kokoro 82M; очень дешёвый и быстрый TTS |
-| `canopylabs/orpheus-3b-0.1-ft` | text | 7.00 | 4k | Orpheus 3B; эмоциональный синтез |
 | `sesame/csm-1b` | text | 7.00 | 4k | CSM 1B; разговорный синтез речи |
 | `fish-audio/s1` | text | 15.00 | — | Fish S1; качественный синтез речи |
 | `fish-audio/s2-pro` | text | 15.00 | — | Fish S2 Pro; естественная речь |
@@ -19,6 +18,7 @@
 | `microsoft/mai-voice-2-flash` | text | 15.00 | — | Microsoft MAI Voice 2 Flash; быстрый TTS |
 | `qwen/qwen-audio-3.0-tts-flash` | text | 15.00 | — | Qwen Audio TTS Flash; быстрый синтез |
 | `x-ai/grok-voice-tts-1.0` | text | 15.00 | 15k | Grok Voice TTS; синтез речи xAI |
+| `canopylabs/orpheus-3b-0.1-ft` | text | 15.00 | 4k | Orpheus 3B; эмоциональный синтез |
 | `mistralai/voxtral-mini-tts-2603` | text | 16.00 | 4k | Voxtral Mini TTS; компактный синтез |
 | `qwen/qwen-audio-3.0-tts-plus` | text | 20.00 | — | Qwen Audio TTS Plus; качественный синтез |
 | `microsoft/mai-voice-2` | text | 22.00 | — | Microsoft MAI Voice 2; качественный TTS |
