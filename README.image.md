@@ -1,7 +1,7 @@
 # Генерация изображений OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-09-21 08:37` (UTC)
+> Последняя генерация: `2026-09-28 09:25` (UTC)
 > Модели, которые генерируют и редактируют изображения. Выход — изображение.
 > Цены: **Цена за токен $/M** — за 1 млн токенов; **Цена за единицу $** —
 > фиксированная цена за единицу вывода (изображение/видео/аудио), если она задана.
@@ -9,6 +9,7 @@
 
 | Модель | Входная модальность | Цена за токен $/M | Цена за единицу $ | Контекст | Описание |
 |---|---|---|---|---|---|
+| `recraft/recraft-v4.1-flash` | text | 1.68 | — | 65k | Генерация и редактирование изображений |
 | `meta/muse-image` | image+text | 2.40 | — | 65k | Генерация и редактирование изображений |
 | `black-forest-labs/flux.2-klein-4b` | image+text | 3.42 | — | 40k | FLUX.2 Klein 4B; компактная и быстрая |
 | `krea/krea-2-medium-turbo` | image+text | 3.59 | — | 65k | Krea 2 Turbo; быстрая генерация |
@@ -61,5 +62,7 @@
 | `qwen/qwen-image-3-pro` | image+text | 9.58 | $0.0030 | 65k | Qwen Image 3 Pro; повышенное качество и детализация |
 | `x-ai/grok-imagine-image-2.0` | image+text | 9.58 | $0.0100 | 65k | Grok Imagine; фотореалистичные изображения |
 | `x-ai/grok-imagine-image-quality` | image+text | 11.98 | $0.0100 | 65k | Grok Imagine Quality; улучшенное качество генерации |
+| `inclusionai/ming-image-0.1-design-layer` | image+text | — | — | — | Генерация и редактирование изображений |
+| `inclusionai/ming-image-0.1-design` | text | — | — | — | Генерация и редактирование изображений |
 | `openrouter/auto-beta` | audio+file+image+text+video | — | — | 2.0M | Бета-роутер; выбирает модель автоматически |
 | `openrouter/auto` | audio+file+image+text+video | — | — | 2.0M | Роутер по задачам; выбирает модель автоматически |
