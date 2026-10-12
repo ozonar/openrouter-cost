@@ -1,12 +1,13 @@
 # Генерация видео OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-10-05 10:03` (UTC)
+> Последняя генерация: `2026-10-12 10:18` (UTC)
 > Модели, генерирующие видео из текста/изображений.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене вывода (output)** по возрастанию.
 
 | Модель | Входная модальность | Цена $/M | Контекст | Описание |
 |---|---|---|---|---|
+| `x-ai/grok-imagine-video-1.5-lite` | image+text | 0.00 | — | Быстрая/лёгкая генерация видео |
 | `heygen/heygen-video-1` | audio+image+text+video | 0.00 | — | Генерация видео из текста/изображений |
 | `black-forest-labs/flux-video-edit` | text+video | 0.00 | — | Генерация видео из текста/изображений |
 | `minimax/hailuo-3-max` | image+text | 0.00 | — | Быстрая/лёгкая генерация видео |
@@ -35,5 +36,4 @@
 | `bytedance/seedance-2.0-fast` | audio+image+text+video | 0.00 | — | Seedance 2.0 Fast; быстрая версия |
 | `alibaba/wan-2.6` | image+text | 0.00 | — | Wan 2.6; генерация видео Alibaba |
 | `bytedance/seedance-1-5-pro` | image+text | 0.00 | — | Seedance 1.5 Pro; проверенная генерация |
-| `openai/sora-2-pro` | image+text | 0.00 | — | Sora 2 Pro; флагман генерации видео OpenAI |
 | `google/veo-3.1` | image+text | 0.00 | — | Veo 3.1; топовая генерация видео Google |
