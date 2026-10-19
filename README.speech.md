@@ -1,7 +1,7 @@
 # Синтез речи (TTS) OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-10-12 10:18` (UTC)
+> Последняя генерация: `2026-10-19 08:32` (UTC)
 > Преобразование текста в речь. Ранжирование по цене входа (цена токенов текста).
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене входа (prompt)** по возрастанию.
 
@@ -13,8 +13,11 @@
 | `google/gemini-3.8-flash-tts` | text | 0.50 | 32k | Быстрый синтез речи |
 | `hexgrad/kokoro-82m` | text | 0.62 | 4k | Kokoro 82M; очень дешёвый и быстрый TTS |
 | `google/gemini-3.1-flash-tts-preview` | text | 1.00 | 32k | Gemini Flash TTS; синтез речи Google |
+| `fish-audio/drama-3` | text | 2.00 | — | Синтез речи (текст → аудио) |
+| `heygen/heygen-voice-1-turbo` | text | 4.00 | — | Быстрый синтез речи |
 | `canopylabs/orpheus-3b-0.1-ft` | text | 7.00 | 4k | Orpheus 3B; эмоциональный синтез |
 | `sesame/csm-1b` | text | 7.00 | 4k | CSM 1B; разговорный синтез речи |
+| `heygen/heygen-voice-1` | text | 15.00 | — | Синтез речи (текст → аудио) |
 | `microsoft/mai-voice-2.1-flash` | text | 15.00 | — | Быстрый синтез речи |
 | `fish-audio/s1` | text | 15.00 | — | Fish S1; качественный синтез речи |
 | `fish-audio/s2-pro` | text | 15.00 | — | Fish S2 Pro; естественная речь |

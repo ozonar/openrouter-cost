@@ -1,7 +1,7 @@
 # Генерация видео OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-10-12 10:18` (UTC)
+> Последняя генерация: `2026-10-19 08:32` (UTC)
 > Модели, генерирующие видео из текста/изображений.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене вывода (output)** по возрастанию.
 
@@ -11,8 +11,8 @@
 | `heygen/heygen-video-1` | audio+image+text+video | 0.00 | — | Генерация видео из текста/изображений |
 | `black-forest-labs/flux-video-edit` | text+video | 0.00 | — | Генерация видео из текста/изображений |
 | `minimax/hailuo-3-max` | image+text | 0.00 | — | Быстрая/лёгкая генерация видео |
-| `alibaba/wan-3.0-prime` | image+text | 0.00 | — | Генерация видео из текста/изображений |
-| `alibaba/wan-3.0` | image+text | 0.00 | — | Генерация видео из текста/изображений |
+| `alibaba/wan-3.0-prime` | audio+image+text+video | 0.00 | — | Генерация видео из текста/изображений |
+| `alibaba/wan-3.0` | audio+image+text+video | 0.00 | — | Генерация видео из текста/изображений |
 | `heygen/avatar-iv` | audio+image+text | 0.00 | — | Генерация видео из текста/изображений |
 | `black-forest-labs/flux-video-upscale` | text+video | 0.00 | — | FLUX Video Upscale; повышение разрешения видео |
 | `bytedance/seedance-2.0-mini` | audio+image+text+video | 0.00 | — | Seedance 2.0 Mini; компактная версия |

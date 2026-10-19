@@ -1,7 +1,7 @@
 # Эмбеддинги OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-10-12 10:18` (UTC)
+> Последняя генерация: `2026-10-19 08:32` (UTC)
 > Векторные представления текста. Без ранжирования по стоимости вывода.
 > Цены в **USD за 1 млн токенов**. Без ранжирования по стоимости вывода (иная ценовая модель).
 
@@ -42,5 +42,5 @@
 | `openai/text-embedding-3-large:batch` | 0.07 | 8k | text-embedding-3-large batch; пакетный режим |
 | `openai/text-embedding-3-small` | 0.02 | 8k | OpenAI text-embedding-3-small; эффективные эмбеддинги |
 | `openai/text-embedding-3-small:batch` | 0.01 | 8k | text-embedding-3-small batch; пакетный режим |
-| `qwen/qwen3-embedding-8b` | 0.01 | 32k | Qwen3 Embedding 8B; крупный эмбеддер |
+| `qwen/qwen3-embedding-8b` | 0.01 | 40k | Qwen3 Embedding 8B; крупный эмбеддер |
 | `qwen/qwen3-embedding-4b` | 0.02 | 32k | Qwen3 Embedding 4B; сбалансированный эмбеддер |

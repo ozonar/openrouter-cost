@@ -1,7 +1,7 @@
 # Транскрипция (STT) OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-10-12 10:18` (UTC)
+> Последняя генерация: `2026-10-19 08:32` (UTC)
 > Преобразование аудио в текст. Ранжирование по цене входа.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене входа (prompt)** по возрастанию.
 
@@ -25,10 +25,11 @@
 | `mistralai/voxtral-mini-transcribe` | audio | 50.00 | 16k | Voxtral Mini Transcribe; транскрипция |
 | `deepgram/nova-3` | audio | 71.67 | — | Deepgram Nova 3; быстрая точная транскрипция |
 | `openai/gpt-transcribe` | audio | 75.00 | — | GPT Transcribe; мощная транскрипция |
+| `assemblyai/universal-3-6-pro` | audio | 83.33 | — | Качественное распознавание речи |
+| `assemblyai/universal-3-5-pro` | audio | 83.33 | — | Качественное распознавание речи |
 | `fish-audio/transcribe-1-pro` | audio | 100.00 | — | Качественное распознавание речи |
 | `fish-audio/transcribe-1` | audio | 100.00 | — | Fish Transcribe; транскрипция |
 | `openai/whisper-1` | audio | 100.00 | — | Whisper-1; классическое распознавание |
-| `assemblyai/universal-3-5-pro` | audio | 125.00 | — | Качественное распознавание речи |
 | `google/chirp-3` | audio | 266.67 | — | Google Chirp 3; распознавание речи |
 | `microsoft/mai-transcribe-2` | audio | 100,000.00 | — | Транскрипция аудио (аудио → текст) |
 | `microsoft/mai-transcribe-1.5` | audio | 360,000.00 | — | Microsoft MAI Transcribe; качественная транскрипция |
