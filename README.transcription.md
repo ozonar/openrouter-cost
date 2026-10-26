@@ -1,7 +1,7 @@
 # Транскрипция (STT) OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-10-19 08:32` (UTC)
+> Последняя генерация: `2026-10-26 08:34` (UTC)
 > Преобразование аудио в текст. Ранжирование по цене входа.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене входа (prompt)** по возрастанию.
 
@@ -18,11 +18,13 @@
 | `mistralai/voxtral-mini-3b-2507` | audio | 16.67 | — | Voxtral Mini 3B; компактный STT |
 | `nvidia/parakeet-tdt-0.6b-v3` | audio | 25.00 | — | Parakeet TDT 0.6B; компактный ASR |
 | `x-ai/grok-stt-1.0` | audio | 27.78 | — | Grok STT; распознавание речи xAI |
-| `elevenlabs/scribe-v2` | audio | 30.56 | — | Транскрипция аудио (аудио → текст) |
-| `elevenlabs/scribe-v2-medical` | audio | 30.56 | — | Транскрипция аудио (аудио → текст) |
 | `meta/muse-voice-transcribe-1.0` | audio | 50.00 | — | Транскрипция аудио (аудио → текст) |
 | `mistralai/voxtral-small-24b-2507-stt` | audio | 50.00 | — | Voxtral Small; распознавание речи |
 | `mistralai/voxtral-mini-transcribe` | audio | 50.00 | 16k | Voxtral Mini Transcribe; транскрипция |
+| `mistralai/voxtral-mini-transcribe-3-0` | audio | 58.33 | 65k | Компактное распознавание речи |
+| `elevenlabs/scribe-v2` | audio | 61.11 | — | Транскрипция аудио (аудио → текст) |
+| `elevenlabs/scribe-v2-medical` | audio | 61.11 | — | Транскрипция аудио (аудио → текст) |
+| `mistralai/voxtral-small-transcribe-3-0` | audio | 66.67 | 65k | Транскрипция аудио (аудио → текст) |
 | `deepgram/nova-3` | audio | 71.67 | — | Deepgram Nova 3; быстрая точная транскрипция |
 | `openai/gpt-transcribe` | audio | 75.00 | — | GPT Transcribe; мощная транскрипция |
 | `assemblyai/universal-3-6-pro` | audio | 83.33 | — | Качественное распознавание речи |
