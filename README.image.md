@@ -1,7 +1,7 @@
 # Генерация изображений OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-10-26 08:34` (UTC)
+> Последняя генерация: `2026-11-02 10:36` (UTC)
 > Модели, которые генерируют и редактируют изображения. Выход — изображение.
 > Цены: **Цена за токен $/M** — за 1 млн токенов; **Цена за единицу $** —
 > фиксированная цена за единицу вывода (изображение/видео/аудио), если она задана.
@@ -48,6 +48,7 @@
 | `openai/gpt-image-2` | image+text | 30.00 | — | 400k | GPT Image 2; новейшая генерация OpenAI |
 | `openai/gpt-5.4-image-2` | file+image+text | 30.00 | — | 272k | GPT-5.4 Image 2; актуальная генерация изображений |
 | `google/gemini-2.5-flash-image` | image+text | 30.00 | $0.0000 | 32k | Nano Banana (Gemini 2.5); проверенная генерация |
+| `sourceful/riverflow-v2.6-pro` | image+text | 31.14 | — | 32k | Модель генерации изображений высокого качества |
 | `sourceful/riverflow-v2.5-pro` | image+text | 31.14 | — | 32k | Riverflow V2.5 Pro; высокое качество |
 | `sourceful/riverflow-v2-pro` | image+text | 35.93 | — | 8k | Riverflow V2 Pro; высокое качество |
 | `microsoft/mai-image-2.6` | image+text | 38.00 | — | 4k | Генерация и редактирование изображений |
@@ -67,8 +68,8 @@
 | `bytedance-seed/seedream-5-0-pro` | image+text | 10.78 | $0.0030 | — | Seedream 5 Pro; высокое качество, точное следование промпту |
 | `qwen/qwen-image-3` | image+text | 7.19 | $0.0030 | 65k | Qwen Image 3; универсальная генерация изображений |
 | `qwen/qwen-image-3-pro` | image+text | 9.58 | $0.0030 | 65k | Qwen Image 3 Pro; повышенное качество и детализация |
+| `krea/k3-edit` | image+text | 7.19 | $0.0100 | 65k | Генерация и редактирование изображений |
 | `x-ai/grok-imagine-image-2.0` | image+text | 9.58 | $0.0100 | 65k | Grok Imagine; фотореалистичные изображения |
 | `x-ai/grok-imagine-image-quality` | image+text | 11.98 | $0.0100 | 65k | Grok Imagine Quality; улучшенное качество генерации |
-| `krea/k3-edit` | image+text | 14.37 | $0.0200 | 65k | Генерация и редактирование изображений |
 | `openrouter/auto-beta` | audio+file+image+text+video | — | — | 2.0M | Бета-роутер; выбирает модель автоматически |
 | `openrouter/auto` | audio+file+image+text+video | — | — | 2.0M | Роутер по задачам; выбирает модель автоматически |

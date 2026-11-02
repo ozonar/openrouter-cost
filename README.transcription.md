@@ -1,7 +1,7 @@
 # Транскрипция (STT) OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-10-26 08:34` (UTC)
+> Последняя генерация: `2026-11-02 10:36` (UTC)
 > Преобразование аудио в текст. Ранжирование по цене входа.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене входа (prompt)** по возрастанию.
 
@@ -18,6 +18,7 @@
 | `mistralai/voxtral-mini-3b-2507` | audio | 16.67 | — | Voxtral Mini 3B; компактный STT |
 | `nvidia/parakeet-tdt-0.6b-v3` | audio | 25.00 | — | Parakeet TDT 0.6B; компактный ASR |
 | `x-ai/grok-stt-1.0` | audio | 27.78 | — | Grok STT; распознавание речи xAI |
+| `nvidia/nemotron-3.5-transcribe` | audio | 33.30 | — | Транскрипция аудио (аудио → текст) |
 | `meta/muse-voice-transcribe-1.0` | audio | 50.00 | — | Транскрипция аудио (аудио → текст) |
 | `mistralai/voxtral-small-24b-2507-stt` | audio | 50.00 | — | Voxtral Small; распознавание речи |
 | `mistralai/voxtral-mini-transcribe` | audio | 50.00 | 16k | Voxtral Mini Transcribe; транскрипция |
