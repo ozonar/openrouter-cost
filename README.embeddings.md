@@ -1,23 +1,25 @@
 # Эмбеддинги OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-11-02 10:36` (UTC)
+> Последняя генерация: `2026-11-09 10:57` (UTC)
 > Векторные представления текста. Без ранжирования по стоимости вывода.
 > Цены в **USD за 1 млн токенов**. Без ранжирования по стоимости вывода (иная ценовая модель).
 
 | Модель | Цена $/M | Контекст | Описание |
 |---|---|---|---|
+| `cohere/embed-5-fast` | 0.08 | 128k | Векторные представления текста |
+| `cohere/embed-5-pro` | 0.12 | 128k | Векторные представления текста |
 | `amazon/titan-embed-image-v1` | 0.80 | 1.0k | Векторные представления текста |
 | `amazon/titan-embed-text-v1` | 0.10 | 8k | Векторные представления текста |
 | `amazon/titan-embed-text-v2` | 0.02 | 8k | Векторные представления текста |
 | `nvidia/nemotron-3.5-embed-1b:free` | 0.00 | 32k | Бесплатные эмбеддинги |
 | `nvidia/nemotron-3.5-embed-8b:free` | 0.00 | 32k | Бесплатные эмбеддинги |
 | `liquid/lfm-2.5-embedding-350m:free` | 0.00 | 5.0k | LFM Embedding 350M; компактный эмбеддер |
-| `voyageai/voyage-code-4` | 0.12 | 32k | Voyage Code 4; эмбеддинги для кода |
-| `voyageai/voyage-multimodal-3.5` | 0.12 | 32k | Voyage Multimodal 3.5; мультимодальные эмбеддинги |
-| `voyageai/voyage-4-lite` | 0.02 | 32k | Voyage 4 Lite; лёгкие и быстрые |
-| `voyageai/voyage-4` | 0.06 | 32k | Voyage 4; универсальные эмбеддинги |
-| `voyageai/voyage-4-large` | 0.12 | 32k | Voyage 4 Large; высокое качество |
+| `mongodb/voyage-code-4` | 0.12 | 32k | Векторные представления текста |
+| `mongodb/voyage-multimodal-3.5` | 0.12 | 32k | Векторные представления текста |
+| `mongodb/voyage-4-lite` | 0.02 | 32k | Компактные эмбеддинги |
+| `mongodb/voyage-4` | 0.06 | 32k | Векторные представления текста |
+| `mongodb/voyage-4-large` | 0.12 | 32k | Векторные представления текста |
 | `nvidia/nemotron-3-embed-1b:free` | 0.00 | 32k | Nemotron Embed 1B; компактный эмбеддер |
 | `google/gemini-embedding-2` | 0.20 | 8k | Gemini Embedding 2; актуальный эмбеддер Google |
 | `google/gemini-embedding-2:batch` | 0.10 | 8k | Компактные эмбеддинги |
@@ -40,6 +42,7 @@
 | `sentence-transformers/all-minilm-l6-v2` | 0.01 | 5.0k | all-MiniLM-L6; компактные универсальные |
 | `mistralai/mistral-embed-2312` | 0.10 | 8k | Mistral Embed; надёжный эмбеддер |
 | `google/gemini-embedding-001` | 0.15 | 20k | Gemini Embedding 001; ранний эмбеддер Google |
+| `google/gemini-embedding-001:batch` | 0.07 | 20k | Компактные эмбеддинги |
 | `openai/text-embedding-ada-002` | 0.10 | 8k | OpenAI ada-002; классические надёжные эмбеддинги |
 | `openai/text-embedding-ada-002:batch` | 0.05 | 8k | ada-002 batch; пакетный режим |
 | `mistralai/codestral-embed-2505` | 0.15 | 8k | Codestral Embed; эмбеддинги для кода |

@@ -1,7 +1,7 @@
 # Генерация изображений OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-11-02 10:36` (UTC)
+> Последняя генерация: `2026-11-09 10:57` (UTC)
 > Модели, которые генерируют и редактируют изображения. Выход — изображение.
 > Цены: **Цена за токен $/M** — за 1 млн токенов; **Цена за единицу $** —
 > фиксированная цена за единицу вывода (изображение/видео/аудио), если она задана.
@@ -41,6 +41,8 @@
 | `recraft/recraft-v4-vector` | image+text | 19.16 | — | 65k | Recraft V4 Vector; векторная графика |
 | `recraft/recraft-v4-styles-pro` | image+text | 23.95 | — | 65k | Модель генерации изображений высокого качества |
 | `recraft/recraft-v4-styles-pro-vector` | image+text | 28.74 | — | 65k | Модель генерации изображений высокого качества |
+| `openai/gpt-image-2.6-sunburst` | image+text | 30.00 | — | 400k | Генерация и редактирование изображений |
+| `openai/gpt-image-2.6-flare` | image+text | 30.00 | — | 400k | Генерация и редактирование изображений |
 | `google/gemini-nano-banana-2.1` | image+text | 30.00 | — | 65k | Компактная модель генерации изображений |
 | `openai/gpt-image-2.5-sunburst` | image+text | 30.00 | — | 400k | Генерация и редактирование изображений |
 | `openai/gpt-image-2.5-flare` | image+text | 30.00 | — | 400k | Генерация и редактирование изображений |
@@ -70,6 +72,6 @@
 | `qwen/qwen-image-3-pro` | image+text | 9.58 | $0.0030 | 65k | Qwen Image 3 Pro; повышенное качество и детализация |
 | `krea/k3-edit` | image+text | 7.19 | $0.0100 | 65k | Генерация и редактирование изображений |
 | `x-ai/grok-imagine-image-2.0` | image+text | 9.58 | $0.0100 | 65k | Grok Imagine; фотореалистичные изображения |
-| `x-ai/grok-imagine-image-quality` | image+text | 11.98 | $0.0100 | 65k | Grok Imagine Quality; улучшенное качество генерации |
-| `openrouter/auto-beta` | audio+file+image+text+video | — | — | 2.0M | Бета-роутер; выбирает модель автоматически |
 | `openrouter/auto` | audio+file+image+text+video | — | — | 2.0M | Роутер по задачам; выбирает модель автоматически |
+| `openrouter/auto-code` | audio+file+image+text+video | — | — | 2.0M | Генерация и редактирование изображений |
+| `openrouter/auto-beta` | audio+file+image+text+video | — | — | 2.0M | Бета-роутер; выбирает модель автоматически |

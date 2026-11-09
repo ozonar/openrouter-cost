@@ -1,7 +1,7 @@
 # Транскрипция (STT) OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-11-02 10:36` (UTC)
+> Последняя генерация: `2026-11-09 10:57` (UTC)
 > Преобразование аудио в текст. Ранжирование по цене входа.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене входа (prompt)** по возрастанию.
 
@@ -15,10 +15,11 @@
 | `openai/whisper-large-v3-turbo` | audio | 3.33 | — | Whisper Large V3 Turbo; быстрая версия |
 | `qwen/qwen3-asr-1.7b` | audio | 7.50 | — | Qwen3 ASR 1.7B; ASR среднего размера |
 | `openai/whisper-large-v3` | audio | 7.50 | — | Whisper Large V3; эталон распознавания речи |
+| `moondream/parakeet-ultra` | audio | 16.67 | — | Транскрипция аудио (аудио → текст) |
+| `nvidia/nemotron-3.5-transcribe` | audio | 16.67 | — | Транскрипция аудио (аудио → текст) |
 | `mistralai/voxtral-mini-3b-2507` | audio | 16.67 | — | Voxtral Mini 3B; компактный STT |
-| `nvidia/parakeet-tdt-0.6b-v3` | audio | 25.00 | — | Parakeet TDT 0.6B; компактный ASR |
+| `nvidia/parakeet-tdt-0.6b-v3` | audio | 16.67 | — | Parakeet TDT 0.6B; компактный ASR |
 | `x-ai/grok-stt-1.0` | audio | 27.78 | — | Grok STT; распознавание речи xAI |
-| `nvidia/nemotron-3.5-transcribe` | audio | 33.30 | — | Транскрипция аудио (аудио → текст) |
 | `meta/muse-voice-transcribe-1.0` | audio | 50.00 | — | Транскрипция аудио (аудио → текст) |
 | `mistralai/voxtral-small-24b-2507-stt` | audio | 50.00 | — | Voxtral Small; распознавание речи |
 | `mistralai/voxtral-mini-transcribe` | audio | 50.00 | 16k | Voxtral Mini Transcribe; транскрипция |
