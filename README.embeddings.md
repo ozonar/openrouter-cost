@@ -1,7 +1,7 @@
 # Эмбеддинги OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-11-09 10:57` (UTC)
+> Последняя генерация: `2026-11-16 10:41` (UTC)
 > Векторные представления текста. Без ранжирования по стоимости вывода.
 > Цены в **USD за 1 млн токенов**. Без ранжирования по стоимости вывода (иная ценовая модель).
 
@@ -14,13 +14,12 @@
 | `amazon/titan-embed-text-v2` | 0.02 | 8k | Векторные представления текста |
 | `nvidia/nemotron-3.5-embed-1b:free` | 0.00 | 32k | Бесплатные эмбеддинги |
 | `nvidia/nemotron-3.5-embed-8b:free` | 0.00 | 32k | Бесплатные эмбеддинги |
-| `liquid/lfm-2.5-embedding-350m:free` | 0.00 | 5.0k | LFM Embedding 350M; компактный эмбеддер |
 | `mongodb/voyage-code-4` | 0.12 | 32k | Векторные представления текста |
 | `mongodb/voyage-multimodal-3.5` | 0.12 | 32k | Векторные представления текста |
 | `mongodb/voyage-4-lite` | 0.02 | 32k | Компактные эмбеддинги |
 | `mongodb/voyage-4` | 0.06 | 32k | Векторные представления текста |
 | `mongodb/voyage-4-large` | 0.12 | 32k | Векторные представления текста |
-| `nvidia/nemotron-3-embed-1b:free` | 0.00 | 32k | Nemotron Embed 1B; компактный эмбеддер |
+| `nvidia/nemotron-3-embed-1b:free` | 0.00 | 4k | Nemotron Embed 1B; компактный эмбеддер |
 | `google/gemini-embedding-2` | 0.20 | 8k | Gemini Embedding 2; актуальный эмбеддер Google |
 | `google/gemini-embedding-2:batch` | 0.10 | 8k | Компактные эмбеддинги |
 | `google/gemini-embedding-2-preview` | 0.20 | 8k | Gemini Embedding 2 Preview; предпросмотр |

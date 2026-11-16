@@ -1,7 +1,7 @@
 # Генерация изображений OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-11-09 10:57` (UTC)
+> Последняя генерация: `2026-11-16 10:41` (UTC)
 > Модели, которые генерируют и редактируют изображения. Выход — изображение.
 > Цены: **Цена за токен $/M** — за 1 млн токенов; **Цена за единицу $** —
 > фиксированная цена за единицу вывода (изображение/видео/аудио), если она задана.
@@ -9,18 +9,22 @@
 
 | Модель | Входная модальность | Цена за токен $/M | Цена за единицу $ | Контекст | Описание |
 |---|---|---|---|---|---|
+| `tencent/hy-world-2.1-panorama` | text | 1.60 | — | 4k | Генерация и редактирование изображений |
 | `tencent/hy-image-v3.5-preview` | image+text | 1.60 | — | 100k | Генерация и редактирование изображений |
+| `recraft/recraft-v4.1-flash-v2` | text | 1.68 | — | 65k | Генерация и редактирование изображений |
 | `recraft/recraft-v4.1-flash` | text | 1.68 | — | 65k | Генерация и редактирование изображений |
 | `black-forest-labs/flux-3-image-klein` | image+text | 1.92 | — | 46k | Компактная модель генерации изображений |
 | `meta/muse-image` | image+text | 2.40 | — | 65k | Генерация и редактирование изображений |
 | `black-forest-labs/flux.2-klein-4b` | image+text | 3.42 | — | 40k | FLUX.2 Klein 4B; компактная и быстрая |
 | `krea/krea-2-medium-turbo` | image+text | 3.59 | — | 65k | Krea 2 Turbo; быстрая генерация |
+| `minimax/minimax-h3-image` | image+text | 3.80 | — | 4k | Компактная модель генерации изображений |
 | `bytedance-seed/seedream-5-0-flash` | image+text | 4.31 | — | — | Генерация и редактирование изображений |
 | `qwen/qwen-image-2.1-turbo` | image+text | 4.41 | — | 65k | Генерация и редактирование изображений |
 | `sourceful/riverflow-v2.5-fast` | image+text | 4.55 | — | 32k | Riverflow V2.5 Fast; быстрая актуальная генерация |
 | `sourceful/riverflow-v2-fast` | image+text | 4.79 | — | 8k | Riverflow V2 Fast; быстрая генерация |
 | `krea/krea-2-medium` | image+text | 7.19 | — | 65k | Krea 2 Medium; сбалансированная генерация |
 | `black-forest-labs/flux.2-pro` | image+text | 7.32 | — | 46k | FLUX.2 Pro; премиальная генерация Black Forest |
+| `minimax/minimax-h3-image-highspeed` | image+text | 7.60 | — | 4k | Компактная модель генерации изображений |
 | `openai/gpt-image-1-mini` | image+text | 8.00 | — | 400k | GPT Image 1 Mini; быстрая и дешёвая генерация |
 | `openai/gpt-5-image-mini` | file+image+text | 8.00 | — | 400k | GPT-5 Image Mini; лёгкая и быстрая генерация |
 | `recraft/recraft-v4-styles` | image+text | 8.38 | — | 65k | Генерация и редактирование изображений |
@@ -70,8 +74,10 @@
 | `bytedance-seed/seedream-5-0-pro` | image+text | 10.78 | $0.0030 | — | Seedream 5 Pro; высокое качество, точное следование промпту |
 | `qwen/qwen-image-3` | image+text | 7.19 | $0.0030 | 65k | Qwen Image 3; универсальная генерация изображений |
 | `qwen/qwen-image-3-pro` | image+text | 9.58 | $0.0030 | 65k | Qwen Image 3 Pro; повышенное качество и детализация |
-| `krea/k3-edit` | image+text | 7.19 | $0.0100 | 65k | Генерация и редактирование изображений |
+| `bytedance-seed/seedream-5-5` | image+text | 4.79 | $0.0080 | — | Генерация и редактирование изображений |
 | `x-ai/grok-imagine-image-2.0` | image+text | 9.58 | $0.0100 | 65k | Grok Imagine; фотореалистичные изображения |
+| `krea/k3-edit` | image+text | 14.37 | $0.0200 | 65k | Генерация и редактирование изображений |
+| `recraft/recraft-v4.1-flash-v2:free` | text | — | — | 65k | Бесплатная генерация изображений |
 | `openrouter/auto` | audio+file+image+text+video | — | — | 2.0M | Роутер по задачам; выбирает модель автоматически |
 | `openrouter/auto-code` | audio+file+image+text+video | — | — | 2.0M | Генерация и редактирование изображений |
 | `openrouter/auto-beta` | audio+file+image+text+video | — | — | 2.0M | Бета-роутер; выбирает модель автоматически |

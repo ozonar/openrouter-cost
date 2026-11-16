@@ -1,7 +1,7 @@
 # Генерация видео OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-11-09 10:57` (UTC)
+> Последняя генерация: `2026-11-16 10:41` (UTC)
 > Модели, генерирующие видео из текста/изображений.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене вывода (output)** по возрастанию.
 
@@ -38,5 +38,4 @@
 | `bytedance/seedance-2.0` | audio+image+text+video | 0.00 | — | Seedance 2.0; генерация видео ByteDance |
 | `bytedance/seedance-2.0-fast` | audio+image+text+video | 0.00 | — | Seedance 2.0 Fast; быстрая версия |
 | `alibaba/wan-2.6` | image+text | 0.00 | — | Wan 2.6; генерация видео Alibaba |
-| `bytedance/seedance-1-5-pro` | image+text | 0.00 | — | Seedance 1.5 Pro; проверенная генерация |
 | `google/veo-3.1` | image+text | 0.00 | — | Veo 3.1; топовая генерация видео Google |
