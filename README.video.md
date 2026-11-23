@@ -1,7 +1,7 @@
 # Генерация видео OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-11-16 10:41` (UTC)
+> Последняя генерация: `2026-11-23 11:52` (UTC)
 > Модели, генерирующие видео из текста/изображений.
 > Цены в **USD за 1 млн токенов**. Ранжирование по **цене вывода (output)** по возрастанию.
 
@@ -9,6 +9,9 @@
 |---|---|---|---|---|
 | `google/gemini-omni-1.2-flash` | image+text+video | 9.00 | 131k | Быстрая/лёгкая генерация видео |
 | `google/gemini-omni-1.1-flash` | image+text+video | 9.00 | 131k | Быстрая/лёгкая генерация видео |
+| `heygen/heygen-avatar-6-turbo` | audio+image+text+video | 0.00 | — | Генерация видео из текста/изображений |
+| `heygen/heygen-avatar-6` | audio+image+text+video | 0.00 | — | Генерация видео из текста/изображений |
+| `bytedance/seedance-2.5-flash` | audio+image+text+video | 0.00 | — | Генерация видео из текста/изображений |
 | `tbc/mischief-1` | image+text | 0.00 | — | Генерация видео из текста/изображений |
 | `x-ai/grok-imagine-video-1.5-lite` | image+text | 0.00 | — | Быстрая/лёгкая генерация видео |
 | `heygen/heygen-video-1` | audio+image+text+video | 0.00 | — | Генерация видео из текста/изображений |
@@ -34,8 +37,6 @@
 | `google/veo-3.1-lite` | image+text | 0.00 | — | Veo 3.1 Lite; лёгкая версия |
 | `kwaivgi/kling-video-o1` | image+text | 0.00 | — | Kling Video O1; реалистичная генерация |
 | `minimax/hailuo-2.3` | image+text | 0.00 | — | Hailuo 2.3; проверенная генерация |
-| `alibaba/wan-2.7` | image+text | 0.00 | — | Wan 2.7; актуальная генерация Alibaba |
 | `bytedance/seedance-2.0` | audio+image+text+video | 0.00 | — | Seedance 2.0; генерация видео ByteDance |
 | `bytedance/seedance-2.0-fast` | audio+image+text+video | 0.00 | — | Seedance 2.0 Fast; быстрая версия |
-| `alibaba/wan-2.6` | image+text | 0.00 | — | Wan 2.6; генерация видео Alibaba |
 | `google/veo-3.1` | image+text | 0.00 | — | Veo 3.1; топовая генерация видео Google |

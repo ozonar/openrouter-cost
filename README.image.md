@@ -1,7 +1,7 @@
 # Генерация изображений OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-11-16 10:41` (UTC)
+> Последняя генерация: `2026-11-23 11:52` (UTC)
 > Модели, которые генерируют и редактируют изображения. Выход — изображение.
 > Цены: **Цена за токен $/M** — за 1 млн токенов; **Цена за единицу $** —
 > фиксированная цена за единицу вывода (изображение/видео/аудио), если она задана.
@@ -35,6 +35,7 @@
 | `recraft/recraft-v3` | image+text | 9.58 | — | 65k | Recraft V3; стильная векторная и растровая генерация |
 | `bytedance-seed/seedream-4.5` | image+text | 9.58 | — | 4k | Seedream 4.5; проверенная генерация изображений |
 | `black-forest-labs/flux-3-image` | image+text | 9.82 | — | 46k | Генерация и редактирование изображений |
+| `microsoft/mai-image-2.7-flash` | image+text | 10.00 | — | 4k | Генерация и редактирование изображений |
 | `qwen/qwen-image-2.1-pro` | image+text | 11.02 | — | 65k | Модель генерации изображений высокого качества |
 | `recraft/recraft-v4-styles-vector` | image+text | 11.98 | — | 65k | Генерация и редактирование изображений |
 | `krea/krea-2-large` | image+text | 14.37 | — | 65k | Krea 2 Large; мощная генерация изображений |
@@ -56,6 +57,7 @@
 | `google/gemini-2.5-flash-image` | image+text | 30.00 | $0.0000 | 32k | Nano Banana (Gemini 2.5); проверенная генерация |
 | `sourceful/riverflow-v2.6-pro` | image+text | 31.14 | — | 32k | Модель генерации изображений высокого качества |
 | `sourceful/riverflow-v2.5-pro` | image+text | 31.14 | — | 32k | Riverflow V2.5 Pro; высокое качество |
+| `microsoft/mai-image-2.7` | image+text | 34.00 | — | 4k | Генерация и редактирование изображений |
 | `sourceful/riverflow-v2-pro` | image+text | 35.93 | — | 8k | Riverflow V2 Pro; высокое качество |
 | `microsoft/mai-image-2.6` | image+text | 38.00 | — | 4k | Генерация и редактирование изображений |
 | `openai/gpt-image-1` | image+text | 40.00 | — | 400k | GPT Image 1; флагман генерации OpenAI |

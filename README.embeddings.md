@@ -1,12 +1,14 @@
 # Эмбеддинги OpenRouter
 
 > Источник: `https://openrouter.ai/api/v1/models?output_modalities=all`
-> Последняя генерация: `2026-11-16 10:41` (UTC)
+> Последняя генерация: `2026-11-23 11:52` (UTC)
 > Векторные представления текста. Без ранжирования по стоимости вывода.
 > Цены в **USD за 1 млн токенов**. Без ранжирования по стоимости вывода (иная ценовая модель).
 
 | Модель | Цена $/M | Контекст | Описание |
 |---|---|---|---|
+| `perplexity/pplx-embed-v2-context-0.6b` | 0.02 | 32k | Векторные представления текста |
+| `perplexity/pplx-embed-v2-context-9b` | 0.12 | 32k | Векторные представления текста |
 | `cohere/embed-5-fast` | 0.08 | 128k | Векторные представления текста |
 | `cohere/embed-5-pro` | 0.12 | 128k | Векторные представления текста |
 | `amazon/titan-embed-image-v1` | 0.80 | 1.0k | Векторные представления текста |
@@ -25,7 +27,6 @@
 | `google/gemini-embedding-2-preview` | 0.20 | 8k | Gemini Embedding 2 Preview; предпросмотр |
 | `perplexity/pplx-embed-v1-4b` | 0.03 | 32k | Perplexity Embed 4B; поисковые эмбеддинги |
 | `perplexity/pplx-embed-v1-0.6b` | 0.00 | 32k | Perplexity Embed 0.6B; компактный |
-| `nvidia/llama-nemotron-embed-vl-1b-v2:free` | 0.00 | 131k | Llama Nemotron Embed VL; мультимодальный |
 | `thenlper/gte-base` | 0.01 | 5.0k | GTE Base; базовый эмбеддер |
 | `thenlper/gte-large` | 0.01 | 5.0k | GTE Large; большой эмбеддер |
 | `intfloat/e5-large-v2` | 0.01 | 5.0k | E5 Large V2; качественные эмбеддинги |
